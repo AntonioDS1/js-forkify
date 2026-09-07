@@ -149,8 +149,6 @@ export const uploadRecipe = async formData => {
     };
     const sentData = await AJAX(`${API_URL}?key=${KEY}`, recipeData);
     state.recipe = craftRecipe(sentData);
-    console.log(sentData);
-    console.log(sentData.data.recipe.key);
     state.recipe.isUserGenerated = state.recipe.key === KEY;
     addBookmark();
   } catch (err) {
