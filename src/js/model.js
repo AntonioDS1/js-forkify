@@ -56,7 +56,7 @@ export const craftRecipePreview = recipe => {
   return {
     id: recipe.id,
     publisher: recipe.publisher,
-    image: recipe.image_url,
+    image: recipe.image_url ? recipe.image_url : recipe.image,
     title: recipe.title,
     ...(recipe.key && { key: recipe.key }),
     isUserGenerated: recipe.key === KEY,

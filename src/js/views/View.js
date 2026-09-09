@@ -1,4 +1,4 @@
-import icons from 'url:../../img/icons.svg';
+import icons from '../../img/icons.svg';
 
 class View {
   _data;

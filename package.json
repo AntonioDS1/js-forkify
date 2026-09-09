@@ -6,20 +6,17 @@
   "author": "Antonio De Siena",
   "type": "module",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist",
-    "emp": "-rf .parcel-cache dist"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist node_modules/.vite"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.4",
-    "parcel": "^2.16.4"
+    "sass": "^1.104.0",
+    "vite": "^8.2.2"
   },
   "dependencies": {
-    "core-js": "^3.50.0",
     "fraction.js": "^5.3.4",
-    "fractional": "^1.0.0",
-    "lodash": "^4.18.1",
-    "regenerator-runtime": "^0.14.1",
-    "sass": "^1.103.1"
+    "lodash": "^4.18.1"
   }
 }
